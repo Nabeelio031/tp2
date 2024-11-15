@@ -1,0 +1,124 @@
+
+main {
+    padding-left: 20px;
+    grid-area: main;
+}
+
+#Parag {
+    font-size: 18.5px;
+}
+
+aside {
+    background-color: rgba(0, 191, 254, 255);
+    grid-area: aside;
+    padding-left: 13px;
+    padding-right: 16px;
+    font-weight: bold;
+}
+#Wow{
+    background-color: rgba(255,204,128,255);
+}
+footer {
+    background-color: grey;
+    grid-area: footer;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Sources{
+    text-align: left;
+    padding-left: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "main main main aside"
+        "figure article article aside"
+        "footer footer footer footer";
+        height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: black;
+    grid-area: header;
+}
+nav{
+    padding: 14px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+ul,
+li {
+    
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+img {
+    width: 350px;
+    height: 260px;
+    margin: auto;
+}
+
+figure {
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px; 
+    width: fit-content;
+    float: left;
+    grid-area: figure;
+}
+
+#Desc{
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+}
+
+article {
+    grid-area: article;
+}
+
+#Synop{
+    font-size: 21.3px;
+    float: top;
+    margin: 0;
+}
+
+
+
+.ray{
+    flex-grow: 1;
+}
+#ray2{
+    flex-grow: 20;
+}
+
+.Auteur{
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    overflow: hidden;
+}
